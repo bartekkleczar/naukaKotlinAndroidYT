@@ -22,11 +22,11 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            Column(modifier = Modifier
+            Row(modifier = Modifier
                     .fillMaxSize()
                     .background(Color.Green),
-                horizontalAlignment = Alignment.CenterHorizontally, // centruje elementy z kolumny w wyznaczonym obszarze
-                verticalArrangement = Arrangement.SpaceAround
+                verticalAlignment = Alignment.CenterVertically, // centruje elementy z kolumny w wyznaczonym obszarze
+                horizontalArrangement = Arrangement.SpaceAround
                     // .SpaceBetween - rozdziela elementy na poziome granice
                     // .SpaceEvenly - dzieli na rowne czesc i daje elementy na granicach tych czesci
                     // .SpaceAround - przestrzen miedzy lementami jest taka sama ale miedzy elementem a granica polowe mniejsza
